@@ -1,7 +1,8 @@
 import geocoder
 import requests
 
-API_BASE_URL = "https://api.darksky.net/forecast/ "
+api_key=open('apikey.txt', 'r').read()
+API_BASE_URL = "https://api.darksky.net/forecast/" + api_key
 
 # Declare destinations list here.
 destinations = ["The Space Needle",
