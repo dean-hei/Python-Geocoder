@@ -28,4 +28,4 @@ for point in destinations:
     result = requests.request('GET', full_api_url).json()
 
     # From the result, print out the summary and current temperature.
-    print("At {0} right now, it's {1} with a temperature of {2} degrees.".format(point, result["currently"]["summary"], result["currently"]["temperature"]))    
+    print("At {0} right now, it's {1} with a temperature of {2}° F\n".format(point, result["currently"]["summary"], result["currently"]["temperature"]))    
